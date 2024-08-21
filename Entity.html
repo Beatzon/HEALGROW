@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Entities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <form action="process_client.php" method="post">
+            <h2>Client Entity</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="User's full name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="User's email address (Unique)" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="User's age">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="height">Height:</label>
+            <input type="number" id="height" name="height" placeholder="User's height">
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" placeholder="User's weight">
+            <label for="activityLevel">Activity Level:</label>
+            <select id="activityLevel" name="activityLevel">
+                <option value="sedentary">Sedentary</option>
+                <option value="active">Active</option>
+                <option value="veryActive">Very Active</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="process_workout.php" method="post">
+            <h2>Workout Entity</h2>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="cardio">Cardio</option>
+                <option value="strength">Strength Training</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration">
+            <label for="caloriesBurned">Calories Burned:</label>
+            <input type="number" id="caloriesBurned" name="caloriesBurned">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="process_meal_plan.php" method="post">
+            <h2>Meal Plan Entity</h2>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="breakfast">Breakfast:</label>
+            <input type="text" id="breakfast" name="breakfast" placeholder="Enter Breakfast Details">
+            <label for="lunch">Lunch:</label>
+            <input type="text" id="lunch" name="lunch" placeholder="Enter Lunch Details">
+            <label for="dinner">Dinner:</label>
+            <input type="text" id="dinner" name="dinner" placeholder="Enter Dinner Details">
+            <label for="snacks">Snacks:</label>
+            <input type="text" id="snacks" name="snacks" placeholder="Enter Snacks Details">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

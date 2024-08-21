@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAL GROW - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="contact-container">
+        <div class="left-side">
+            <div class="social-media">
+                <a href="https://www.instagram.com/healgrow" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/healgrow" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/healgrow" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+   
+        <div class="center-line"></div>
+        
+        <div class="right-side">
+            <div class="typing-animation">Healthy Standards</div>
+            <div class="contact-form">
+                <form action="process_contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./Media/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:beatzon460@gmail.com"></a></p>
+                    <button type="submit">Send Email</button>
+                </div> 
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

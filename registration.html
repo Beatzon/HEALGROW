@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+   
+        <nav>
+            <div>
+                <img src="Media/healg pic.PNG" alt="Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>  
+                    <ul>
+                        <li><a href="Entity.html">Entity</a></li> 
+                      </ul>
+        </nav>
+    </header>
+
+     
+    <div class="container">
+        <div class="left-container">
+        <h2>Registration Form</h2>
+        <form action="process_registration.php" method="post">
+           
+            <input type="text" id="username" name="username" placeholder="username"required><br><br>
+
+            
+            <input type="text" id="lastname" name="lastname"placeholder="lastname" required><br><br>
+
+           
+            <input type="text" id="middlename" name="middlename"placeholder="middlename"><br><br>
+
+            
+            <input type="text" id="firstname" name="firstname"placeholder="firstname" required><br><br>
+
+           
+            <input type="text" id="country" name="country"placeholder="country" required><br><br>
+
+           
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,15}" placeholder="Mobile no"required><br><br>
+
+            
+            <input type="email" id="email" name="email" placeholder="email"required><br><br>
+
+            <label for="role">Select Role:</label>
+            <select id="role" name="role">
+                <option value="instructor">Gym Instructor</option>
+                <option value="nutritionist">Nutritionist</option>
+                <option value="member">Member</option>
+            </select><br><br>
+
+            <label for="entry-time">Gym Entry Time:</label>
+            <input type="time" id="entry-time" name="entry-time" placeholder="entry-time"required><br><br>
+
+           
+            <input type="password" id="password" name="password"placeholder="password" required><br><br>
+
+           
+            <input type="password" id="confirm-password" name="confirm-password"placeholder="confirm-password" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+
+    <div class="right-container">
+    <div class="container">
+       
+        <div>
+            <img src="Media/Doit.jpg" alt="Click to Confirm Attendance" onclick="showAvailabilityForm()">
+        </div>
+        <div class="availability-form" id="availability-form">
+            <h2>Attendance Confirmation Form</h2>
+            <label for="availability">Were you available today?</label>
+            <input type="radio" id="yes" name="availability" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="availability" value="no">
+            <label for="no">No</label>
+
+            <label for="time-range">Select Time Range:</label>
+            <select id="time-range" name="time-range">
+                <option value="morning">6 am - 9 am</option>
+                <option value="evening">5 pm - 8 pm</option>
+                <input type="submit" value="Submit">
+            </select>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function showAvailabilityForm() {
+            var form = document.getElementById('availability-form');
+            form.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

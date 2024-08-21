@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Media/makr.jpg');
+    backdrop-filter:blur(10px) brightness(0.5);
+    background-color: #cfd6b0;
+}
+nav {
+    background-color: #6b87b1;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    transition: background-color 0.5s ease; /* Transition effect */
+  }
+  
+  /* Links within the nav bar */
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+  
+  /* Hover effect for links */
+  nav a:hover {
+    background-color: #005757;
+  }
+  
+  /* Change the background color of the nav bar on hover */
+  nav:hover {
+    background-color: #ac0d77;
+  }
+  .logo-container {
+      margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .nav-links {
+      display: flex;
+      text-decoration: none;
+          padding: 0 10px;
+     
+  }
+  
+  ul {
+      font-size: larger;
+      font-weight: bolder;
+      line-height: 2;
+      justify-content: right;
+      padding: 3px; /* Removed 5px auto */
+      right: 35px;
+  }
+  
+  /* li {
+      display: inline-block;
+      list-style-type: none;
+  } */
+  
+  li a {
+      text-decoration: none;
+      padding: 5px 20px; /* Adjusted padding for better spacing */
+      color: #300594;
+  }
+  
+  li a:hover {
+      background-color: orangered;
+      cursor: pointer;
+      color: #103e50;
+      border-radius: 2rem;
+  }
+  
+  .logo {
+      width: 60px;
+      height: 60px;
+  }
+.container {
+    max-width: 400px;
+    display:flex;
+    align: center;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #4bb39c;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-container {
+    flex: 1;
+    padding: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #0f306d;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #3d1fe7;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+.availability-form {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #8a5879;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    cursor: pointer;
+    max-width: 80%;
+    height: 60%;
+    border-radius: 5px;
+}

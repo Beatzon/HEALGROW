@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEAL GROW - Discover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+
+    <header>
+     <nav>
+      <ul class="nav-links" >
+            <li><a href="#fitness-tracking">Fitness Tracking</a></li>
+            <li><a href="#meal-planning">Meal Planning</a></li>
+            <li><a href="#nutrition-advice">Nutrition Advice</a></li>
+          </ul>
+
+   <nav>
+           
+            <ul class="nav-links" >
+              <li><a href="home.html">HOME</a></li>
+              <li><a href="discover.html">DISCOVER</a></li>
+              <li><a href="registration.html">REGISTRATION</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+           
+        </nav>
+        </nav>
+      </header>
+      
+      
+      <div class="container3" onclick="toggleInfo('info1')">
+      <section id="fitness-tracking">
+        <h2>Fitness Tracking</h2>
+        <p id="info1" class="hidden">
+        Fitness tracking is a comprehensive method for monitoring and analyzing physical activities and health metrics to improve overall well-being and performance.  Fitness tracking collects real-time data on various parameters, including steps taken, distance covered, calories burned, heart rate, sleep quality, and other vital signs. This data provides valuable insights into an individual's physical condition, allowing for personalized goal setting and progress tracking.
+          
+          By integrating fitness tracking into daily routines, users can make informed decisions about their exercise regimens, dietary choices, and lifestyle adjustments. The continuous feedback and analytics help identify patterns and trends, enabling the optimization of workouts and recovery periods. Additionally, fitness tracking fosters motivation and accountability through goal achievements, social sharing, and community engagement.
+          
+          In a professional context, fitness tracking is essential for athletes aiming to enhance performance, individuals seeking to maintain a healthy lifestyle. 
+          </p>
+      </section>
+    
+  </div>
+
+    
+    <div class="container3" onclick="toggleInfo('info2')">
+      <section id="meal-planning">
+        <h2>Meal Planning</h2>
+        <p id="info2" class="hidden">
+        Meal planning is a strategic approach to organizing and preparing meals in advance, tailored to meet nutritional needs, personal preferences, and lifestyle requirements. This practice involves selecting recipes, creating shopping lists, and scheduling meals for a specific period, whether it be daily, weekly, or monthly. Effective meal planning integrates principles of balanced nutrition, portion control, and dietary diversity, ensuring that meals are both healthful and enjoyable.
+          
+          By adopting meal planning, individuals can achieve numerous benefits, including improved dietary adherence, better management of time and resources, and reduced food waste. It enables the thoughtful incorporation of a variety of food groups, promoting a well-rounded diet that supports overall health and well-being. Meal planning also aids in budgeting and cost-efficiency, as it allows for bulk purchasing and minimizes impulsive food purchases.
+          
+          For professionals, meal planning is an invaluable tool for maintaining energy levels, optimizing cognitive function, and managing weight. It simplifies the process of eating healthily amidst busy schedules and fosters consistency in nutritional intake. In corporate wellness programs, meal planning can play a crucial role in enhancing employee health, productivity, and satisfaction.
+          
+          In essence, meal planning is a proactive and organized method to ensure nutritional adequacy, streamline meal preparation, and support long-term health goals, making it an essential practice for anyone looking to enhance their dietary habits and lifestyle.
+          </p>
+      </section>
+    
+  </div>
+    
+ 
+    <div class="container3" onclick="toggleInfo('info3')">
+      <section id="nutrition-advice">
+        <h2>Nutrition Advice</h2>
+        <p id="info3" class="hidden">
+        Our mission is to empower you to reach your nutrition and fitness goals.
+            
+          Welcome to Heal grow. We are dedicated to empowering you with the facts behind the fads to help you focus on progress, not perfection. We provide verified, evidence-based answers to your most pressing fitness and nutrition questions.
+            
+          We are a resource for reliable and up-to-date information on all nutrition and exercise topics that matter to your health and vitality. For some years, we’ve worked hard to create and refine of curated, comprehensive, fact-checked information.
+             </p>
+      </section>
+    
+  </div>
+      <div class="image-column">
+        <img src="Media/Doit.jpg" alt="Image 1">
+        <img src="Media/Train.jpg" alt="Image 2">
+        <img src="Media/Never.jpg" alt="Image 3">
+        <img src="Media/Just.jpg" alt="Image 4">
+      </div>
+
+      <script>
+        function toggleInfo(id) {
+          var info = document.getElementById(id);
+          if (info.style.display === "none") {
+            info.style.display = "block";
+          } else {
+            info.style.display = "none";
+          }
+        }
+        </script>
+      
+      <footer>
+        <p>Promoting change to reduce obesity and unhealthy eating habits.</p>
+      </footer>
+      </body>
+      </html>
